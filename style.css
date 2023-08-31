@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{/*Minden elemre alkalmazza az alábbi tulajdonságokat.*/
+    margin: 0;/*Az elemek margóit nullára állítja, nincs külső tér az elemek körül.*/
+    padding: 0;/*Az elemek belső térközét nullára állítja.*/
+    box-sizing: border-box;/* Az elem méretét úgy számolja, hogy a padding és a border is a méret részét képezi.*/
+    font-family: 'Poppins', sans-serif;/*A betűtípust beállítja a "Poppins" nevű betűtípusra, vagy ha az nem érhető el, akkor egy sans-serif alapértelmezett betűtípust használ.*/
+}
+
+body{/**/
+    width: 100%;/*A test szélességét a teljes rendelkezésre álló szélességgel egyenlíti ki.*/
+    height: 100vh;/* A test magasságát az ablak magasságának (viewport height) 100%-ára állítja be.*/
+    display: flex;/*A flexbox elrendezést alkalmazza, hogy a gyermekelemeket rugalmasan rendezhesse.*/
+    justify-content: center;/*Középre igazítja a számokat és betűket*/
+    align-items: center;/* Az elemeket függőlegesen középre igazítja.*/
+    background: linear-gradient(65deg, #000,#290C47,#000);/*Egy lineáris gradient háttérképet állít be, amely 45 fokos szögben halad a fekete (#000) színből a lila (#361A69) szín felé.*/
+}
+.calculator{/*A számológépet formázza.*/
+    
+    padding: 20px;/*Térközt állít be a konténer belső részének és a tartalmának között.*/
+    border-radius: 16px;/*a kerekített külső vonal*/
+    background: transparent;/* Áttetsző háttérkép*/
+    box-shadow: 30px 30px 30px #110f0f;/*Árnyékot hoz létre */
+
+}
+
+input{/*Az input mezőket formázza.*/
+    width: 320px;/*Az input mezők szélességét 320 pixelre állítja*/
+    border: none;/*Eltávolítja a keretet az input mezőkről*/
+    padding: 24px;/*érközt állít be a belső tartalom és a keret között.*/   
+    margin: 10px;/*Margót állít be az input mezők között.*/ 
+    background: transparent;/*Áttetsző háttérkép az input mezők számára.*/
+    box-shadow: 0px 3px 15px rgbs(84, 84, 84, 0.1);/*Árnyékot hoz létre az input mezők melett*/
+    font-size: 40px;/*Beállítja a betűméretet 40 pixelre*/
+    text-align: right;/*A szöveget jobbra igazítja*/
+    cursor: pointer;/*Az egérmutatót mutatóra állítja, amikor az input mezőn van.*/
+    color:  #ffd500;/* A szöveg színét fehérre állítja*/
+}
+
+input::placeholder{/*Az input mezők helykitöltő szövegét formázza.*/
+    color: #ffd500;/* A helykitöltő szöveg színét fehérre állítja*/
+}
+
+button{/*A gombokat formázza.*/
+    border: none;/*Eltávolítja a keretet a gombokról*/
+    width: 60px;/*A gombok szélességét 60 pixelre állítja.*/
+    height: 60px;/*A gombok magasságát 60 pixelre állítja.*/
+    margin: 10px;/*Margót állít be a gombok között.*/
+    border-radius: 50%;/* Kerekített sarkokat hoz létre a gombokon.*/
+    background: transparent;/*Áttetsző háttérkép a gombok számára.*/
+    color: #ffd500;/*A szöveg színét fehérre állítja.*/
+    font-size: 20px;/*Beállítja a betűméretet 20 pixelre.*/
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.048);/*Árnyékot hoz létre a gombok fölött.*/
+    cursor: pointer;/*Az egérmutatót mutatóra állítja a gombok fölött.*/
+}
+
+    .equalBtn{/*Az egyenlőség gombot formázza*/
+        background-color: #9737FF;/*Az egyenlőség gomb hátterének színét beállítja.*/
+        color:#000000;
+    }
+
+    .operator{/*Az operátorokat (pl. +,f-,*,/) formázza*/
+        color: #ffd500;/*Az operátorok színét beállítja.*/
+    }
